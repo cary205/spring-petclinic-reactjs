@@ -36,4 +36,8 @@ const renderOwners = (owners: IOwner[]) => (
   </section>
 );
 
-export default ({owners}: { owners: IOwner[] }) => owners ? renderOwners(owners) : null;
+const noData = (owners: IOwner[]) => (
+  <p>NO DATA</p>
+);
+
+export default ({owners}: { owners: IOwner[] }) => owners ? renderOwners(owners) : noData(owners);

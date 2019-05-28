@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
-      __API_SERVER_URL__: JSON.stringify('http://localhost:8080')
+      __API_SERVER_URL__: JSON.stringify('http://192.168.220.128:8080')
     })
   ],
   resolve: {
